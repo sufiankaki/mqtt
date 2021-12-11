@@ -89,3 +89,28 @@ void loop() {
   Serial.println(jsonBuffer);
   delay(1000);
 }
+
+
+/* Integrate the following program above
+
+#include "DHT.h"
+
+#define DHTPIN 2     
+#define DHTTYPE DHT11
+
+DHT dht(DHTPIN, DHTTYPE);
+
+void setup() {
+  dht.begin();
+}
+
+void loop() {
+  delay(2000);
+  Serial.print(F("Humidity: "));
+  Serial.print(dht.readHumidity());
+  Serial.print(F("%  Temperature: "));
+  Serial.print(dht.readTemperature());
+  Serial.print(F("°C "));
+}
+
+*/
